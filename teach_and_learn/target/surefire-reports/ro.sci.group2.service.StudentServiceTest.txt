@@ -1,4 +1,4 @@
 -------------------------------------------------------------------------------
 Test set: ro.sci.group2.service.StudentServiceTest
 -------------------------------------------------------------------------------
-Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 4.903 sec - in ro.sci.group2.service.StudentServiceTest
+Tests run: 5, Failures: 0, Errors: 0, Skipped: 0, Time elapsed: 6.486 sec - in ro.sci.group2.service.StudentServiceTest

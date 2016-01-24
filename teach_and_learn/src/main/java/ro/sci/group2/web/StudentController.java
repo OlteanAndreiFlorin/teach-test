@@ -12,7 +12,7 @@ import ro.sci.group2.domain.Student;
 import ro.sci.group2.service.StudentService;
 
 @Controller
-@RequestMapping("/students")
+@RequestMapping("/student")
 public class StudentController {
 	@Autowired
 	StudentService studentService;
