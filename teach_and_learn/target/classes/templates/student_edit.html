@@ -1,0 +1,13 @@
+<html>
+
+
+<form action="/students" method="post">
+<div style="color:red;" th:text="${err}"></div>
+First Name:<input name = "firstName" th:value="${student.firstName}"/><br/>
+Last Name:<input name = "lastName" th:value="${student.lastName}"/><br/>
+<input type="hidden" th:value="${student.id}" name="id"/>
+<input type="submit" value="Save" />
+</form>
+
+
+</html>

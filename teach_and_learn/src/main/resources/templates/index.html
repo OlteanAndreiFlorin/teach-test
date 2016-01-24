@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<title>Homepage</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
+	th:href="@{webjars/bootstrap/3.3.6/css/bootstrap.min.class}"
+	rel="stylesheet" media="screen" />
+
+<script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.0/jquery.min.js"
+	th:src="@{webjars/jquery/2.2.0/jquery.min.js}"></script>
+
+</head>
+<body>
+	<div class="container">
+		<a href="/"> <img src="../static/images/logo.png" width="80"
+			th:src="@{images/logo.png}" />
+		</a>
+
+		<ol>
+			<li class="active"><a href="/">Home</a></li>
+			<li><a href="/student">Students</a></li>
+		</ol>
+		<div>
+			<img src="../static/images/Apple.png" width="1000"
+				th:src="@{images/Apple.png}" />
+		</div>
+
+		<address>
+			Scoala informala group 2.<br />Email: teach.and.learn.sci@gmail.com
+		</address>
+	</div>
+</body>
+</html>

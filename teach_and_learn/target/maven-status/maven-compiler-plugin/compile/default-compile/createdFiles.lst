@@ -1,0 +1,10 @@
+ro\sci\group2\TeachAndLearnApplication.class
+ro\sci\group2\dao\StudentDao.class
+ro\sci\group2\dao\BaseDAO.class
+ro\sci\group2\dao\inmemory\IMStudentDAO.class
+ro\sci\group2\domain\AbstractModel.class
+ro\sci\group2\web\StudentController.class
+ro\sci\group2\dao\inmemory\IMBaseDAO.class
+ro\sci\group2\domain\Student.class
+ro\sci\group2\service\StudentService.class
+ro\sci\group2\web\IndexController.class
