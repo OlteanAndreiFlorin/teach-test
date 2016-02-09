@@ -1,19 +1,97 @@
-<a href="/student/student_edit">Add Student</a>
-<div style="color:red;" th:text="${err}"></div>
-<table>
-<tr>
-<td>ID</td>
-<td>LastName</td>
-<td>FirstName</td>
-<td>Actions</td>
-</tr>
-<tr th:each="student : ${students}">
-					<td th:text="${{student.id}}"></td>
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head lang="en">
+<title>Homepage</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+
+<link
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
+	rel="stylesheet" media="screen" />
+
+<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+	th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+
+<script
+	src="http://cdn.jsdelivr.net/webjars/jquery-tmpl/beta1.0.0/jquery.tmpl.min.js"
+	th:src="@{/webjars/jquery-tmpl/beta1.0.0/jquery.tmpl.min.js}"></script>
+
+</head>
+<body>
+	<div class="container">
+		<img src="./static/images/logo.jpg}" width="80"/>
+		
+
+		<div>
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand">Teach and Learn</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li><a href="/">Home</a></li>
+						<li><a href="#">Teacher</a></li>
+						<li class="active"><a href="/student">Student</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="/admin">Admin</a></li>
+					</ul>
+				</div>
+			</nav>
+
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="collapse navbar-collapse">
+						<form action="/user/search" method="post" class="navbar-form navbar-right" role="add">
+							<div class="form-group">
+								<input type="text" class="form-control" name="query" id="query"
+									placeholder="Search for ..." />
+							</div>
+							<button type="submit" class="btn btn-default" onclick="">Search</button>
+
+						</form>
+
+						<ul class="nav navbar-nav navbar-left">
+							<li><a href="/student/student_edit"><span
+									class="glyphicon glyphicon-plus" aria-hidden="true">Add
+										student</span></a></li>
+
+						</ul>
+					</div>
+				</div>
+			</nav>
+
+
+			<table class="table">
+				<tr>
+					<th>ID</th>
+					<th>FirstName
+						<form action="/student/sorted" method="post">
+							<button class="glyphicon glyphicon-chevron-up" type="submit" name="order" value="firstAscend"></button>
+							<button class="glyphicon glyphicon-chevron-down" type="submit" name="order" value="firstDescend"></button>
+						</form>
+					</th>
+					<th>LastName
+						<form action="/student/sorted" method="post">
+							<button class="glyphicon glyphicon-chevron-up" type="submit" name="order" value="lastAscend"></button>
+							<button class="glyphicon glyphicon-chevron-down" type="submit" name="order" value="lastDescend"></button>
+						</form>
+					</th>
+					<th>&nbsp;</th>
+				</tr>
+				<tr th:each="student : ${students}">
+					<td th:text="${{student.roles}}"></td>
 					<td th:text="${{student.firstName}}"></td>
 					<td th:text="${{student.lastName}}"></td>
 					<td>
-						<a th:href="@{/student/student_edit?id={id}(id=${{student.id}})}">Edit Student</a>
-						<a th:href="@{/student/student_delete?id={id}(id=${{student.id}})}">Delete Student</a>
-					</td>
-</tr>
-</table>
+					
+					<a th:href="@{/student/student_edit(id=${student.id})}"
+						class="glyphicon glyphicon-pencil" aria-hidden="true"> </a> <a
+						th:href="@{/student/student_delete(id=${student.id})}"
+						class="glyphicon glyphicon-remove" aria-hidden="true"> </a></td>
+				</tr>
+			</table>
+		</div>
+	</div>
+</body>
+</html>

@@ -1,2 +1,5 @@
+ro\sci\group2\service\CourseServiceTest.class
 ro\sci\group2\TeachAndLearnApplicationTests.class
-ro\sci\group2\service\StudentServiceTest.class
+ro\sci\group2\ApplicationTests.class
+ro\sci\group2\domain\CourseTest.class
+ro\sci\group2\service\UserServiceTest.class

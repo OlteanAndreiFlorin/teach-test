@@ -1,10 +1,23 @@
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\dao\StudentDao.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\domain\Student.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\dao\inmemory\IMStudentDAO.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\service\StudentService.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\dao\inmemory\IMBaseDAO.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\domain\AbstractModel.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\TeachAndLearnApplication.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\web\IndexController.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\dao\BaseDAO.java
-D:\School\teachtest\teach_and_learn\src\main\java\ro\sci\group2\web\StudentController.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\domain\User.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\service\UserDetailsServiceImp.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\dao\CourseDAO.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\domain\Course.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\service\UserSorter.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\dao\BaseDAO.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\web\AdminUserController.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\annotation\CurrentUser.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\web\IndexController.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\config\WebSecurityConfig.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\web\TeacherController.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\service\UserService.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\dao\inmemory\IMBaseDAO.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\domain\Meeting.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\dao\inmemory\IMCourseDAO.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\domain\Gender.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\dao\MeetingDAO.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\domain\AbstractModel.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\dao\UserDAO.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\service\CourseService.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\TeachAndLearnApplication.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\dao\inmemory\IMUserDAO.java
+c:\Documents and Settings\rlu\git\Teach-and-learn\teach\teach_and_learn\src\main\java\ro\sci\group2\domain\Role.java

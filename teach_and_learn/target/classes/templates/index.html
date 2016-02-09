@@ -5,27 +5,49 @@
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 
 <link
-	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.6/css/bootstrap.min.css"
-	th:href="@{webjars/bootstrap/3.3.6/css/bootstrap.min.class}"
+	href="http://cdn.jsdelivr.net/webjars/bootstrap/3.3.4/css/bootstrap.min.css"
+	th:href="@{/webjars/bootstrap/3.3.4/css/bootstrap.min.css}"
 	rel="stylesheet" media="screen" />
 
-<script src="http://cdn.jsdelivr.net/webjars/jquery/2.2.0/jquery.min.js"
-	th:src="@{webjars/jquery/2.2.0/jquery.min.js}"></script>
+<script src="http://cdn.jsdelivr.net/webjars/jquery/2.1.4/jquery.min.js"
+	th:src="@{/webjars/jquery/2.1.4/jquery.min.js}"></script>
+	
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
 
 </head>
 <body>
 	<div class="container">
-		<a href="/"> <img src="../static/images/logo.png" width="80"
-			th:src="@{images/logo.png}" />
-		</a>
+		<img src="../static/images/logo.jpg" width="80"
+			th:src="@{images/logo.jpg}" />
 
-		<ol>
-			<li class="active"><a href="/">Home</a></li>
-			<li><a href="/student">Students</a></li>
-		</ol>
+		<div style='float: right;'
+			th:with="currentUser=${#httpServletRequest.userPrincipal?.name}">
+			<div th:if="${currentUser != null}">
+				<form th:action="@{/logout}" method="post">
+					<input type="submit" class="btn btn-default" onclick="" value="Log out" />
+				</form>
+				<p th:text="${currentUser}">sample_user</p>
+			</div>
+		</div>
+
+
 		<div>
-			<img src="../static/images/Apple.png" width="1000"
-				th:src="@{images/Apple.png}" />
+			<nav class="navbar navbar-default">
+				<div class="container-fluid">
+					<div class="navbar-header">
+						<a class="navbar-brand">Teach and Learn</a>
+					</div>
+					<ul class="nav navbar-nav">
+						<li class="active"><a href="/">Home</a></li>
+						<li><a href="/teacher">Teacher</a></li>
+						<li><a href="/student">Student</a></li>
+						<li><a href="#">Contact</a></li>
+						<li><a href="/admin">Admin</a></li>
+					</ul>
+				</div>
+			</nav>
+			<img src="../static/images/homepage.jpg" width="1000"
+				th:src="@{images/homepage.jpg}" />
 		</div>
 
 		<address>
